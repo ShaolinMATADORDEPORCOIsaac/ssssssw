@@ -1,0 +1,232 @@
+body {
+  background-image: url('https://wallpapers.com/images/high/1080p-dayz-background-1920-x-1080-44v3vari6hjv73n9.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1{color: white;}
+li{color: white;}
+h2{color: white;}
+p{color: white;}
+td{color: white;}
+tr{color: white;}
+texto-principal{color: white;}
+
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/123bac83-92c8-4690-b339-725fbbed85c4/dg3gce9-7085147f-286d-4bd0-a682-7440371d0ce2.png/v1/fill/w_1192,h_670,q_70,strp/i_have_no_enemies___thorfinn___vinland_manga_3d_by_synedae_dg3gce9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mLzEyM2JhYzgzLTkyYzgtNDY5MC1iMzM5LTcyNWZiYmVkODVjNC9kZzNnY2U5LTcwODUxNDdmLTI4NmQtNGJkMC1hNjgyLTc0NDAzNzFkMGNlMi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZCeyex_9eq12D_PvIrjBy8AGpniWY8MYX35iA0TVgfI') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1s forwards 0.5s;
+}
+
+.hero p {
+    font-size: 1.3em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1s forwards 1s;
+}
+
+.section {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    color: #0056b3;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f39c12;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Seção Descrição */
+.description-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: left;
+}
+
+.description-content p {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.description-content p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Seção Fotos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção Curiosidades */
+.curiosities-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: left;
+}
+
+.curiosity-item {
+    flex: 1;
+    min-width: 280px;
+    background-color: #e6f2ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.curiosity-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #f39c12;
+}
+
+.curiosity-item h3 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Animações */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .description-content, .curiosities-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-content p, .curiosity-item {
+        min-width: unset;
+        width: 90%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+}
